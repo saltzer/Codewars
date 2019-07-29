@@ -1,0 +1,15 @@
+The code does not execute properly. Try to figure out why.
+
+Python:
+-------------------
+def multiply(a, b):
+  c = a * b
+  return c
+-------------------
+
+PowerShell:
+-------------------
+function Multiply($a, $b) {
+  $a * $b
+}
+-------------------
