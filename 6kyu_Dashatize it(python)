@@ -1,0 +1,22 @@
+Given a number, return a string with dash'-'marks before and after each odd integer, but do not begin or end the string with a dash mark.
+
+Ex:
+
+dashatize(274) -> '2-7-4'
+dashatize(6815) -> '68-1-5'
+
+
+-------------------------------
+def dashatize(num):
+    if not num and not (num == 0): return 'None'
+    res = '-'.join(str(abs(num)))
+    result = res[:]
+    x = 0
+
+    for i, val in enumerate(res):
+        if val == '-':
+            if int(res[i - 1]) % 2 == 0 and int(res[i + 1]) % 2 == 0:
+                result = result[:i - x] + result[i + 1 - x:]
+                x += 1
+    return result
+-------------------------------
