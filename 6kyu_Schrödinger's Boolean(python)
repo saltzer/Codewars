@@ -1,0 +1,14 @@
+Can a value be both true and false?
+
+Define omniBool so that it returns true for the following:
+
+omniBool == true && omniBool == false
+
+
+----------------------------------------------
+class AlwaysTrue:
+    def __eq__(self, other):
+        return True
+
+omnibool = AlwaysTrue()
+----------------------------------------------
