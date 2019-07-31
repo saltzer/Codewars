@@ -1,0 +1,18 @@
+Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+Example
+
+divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
+
+
+
+---------------------------------
+std::vector<int> divisible_by(std::vector<int> numbers, int divisor){
+    std::vector<int>result;
+    for(int & x: numbers){
+      if (x % divisor == 0){
+      result.push_back(x);
+    }
+      }
+  return result;
+}
+---------------------------------
