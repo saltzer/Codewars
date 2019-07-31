@@ -1,0 +1,15 @@
+Complete the function which converts a binary number (given as a string) to a decimal number.
+
+Python:
+---------------------------------
+def bin_to_decimal(inp):
+    return int(inp, 2)
+---------------------------------
+
+
+C:
+---------------------------------
+unsigned bin_to_decimal(const char *bin){
+  return strtol(bin, 0, 2);
+}
+---------------------------------
