@@ -14,3 +14,15 @@ function invert(array) {
    return negativeList;
 }
 -----------------------------
+
+
+
+
+-----------------------------
+function invert(array) {
+   var res = array.map(function(num){
+     return -num;
+     });
+   return res;
+}
+-----------------------------
