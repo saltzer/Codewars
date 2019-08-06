@@ -1,0 +1,12 @@
+Complete the solution so that it reverses the string value passed into it.
+
+solution('world') # returns 'dlrow'
+
+
+----------------------------
+public class Kata {
+  public static String solution(String str) {
+    return new StringBuffer(str).reverse().toString();
+  }
+}
+----------------------------
