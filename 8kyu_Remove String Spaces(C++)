@@ -1,0 +1,14 @@
+Simple, remove the spaces from the string, then return the resultant string.
+
+
+-------------------------------
+std::string no_space(std::string x){
+   for(int i = 0; i < x.length(); i++){
+    if(x[i] == ' '){ 
+      x.erase(i,1);
+      i--;
+    }
+      }
+    return(x);
+}
+-------------------------------
