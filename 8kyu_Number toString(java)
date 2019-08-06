@@ -1,0 +1,12 @@
+The code gives an error!
+
+a = some_number.toString
+
+Fix it!
+
+
+------------------------
+public class ToString {
+  public static final String a = Integer.toString(123);
+}
+------------------------
