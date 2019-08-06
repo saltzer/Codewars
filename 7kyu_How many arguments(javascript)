@@ -1,0 +1,11 @@
+Create a method args_count, that returns the count of passed arguments
+
+args_count(1, 2, 3) -> 3
+args_count(1, 2, 3, a: 10) -> 4
+
+
+-----------------------------
+function args_count(n){
+  return arguments.length;
+}
+-----------------------------
